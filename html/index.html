@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta title="Netfix Україна" />
+    <meta lang="ua" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="..\css\style.css" />
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/dd789de8ca.js" crossorigin="anonymous"></script>
+    <!--Link to CSS framework: TailWind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <header class="text-white ">
+            <div class="header">
+                <div class="logo">
+                    <img src="..\img\logo.png" alt="logo">
+                </div>
+                <div class="justify-end relative">
+                    <button onclick="myFunction()" class="btn btn-lang" id="myBtn"><i class="fa-solid fa-globe"></i>
+                        Українська <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div id="myDropdownLang" class="dropdown-content">
+                        <a href="#">Українська</a>
+                        <a href="#">English</a>
+                        <a href="#">Русский</a>
+                    </div>
+
+                    <a href="login.html" class="btn btn-login">Увійти</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero-content space-y-6">
+            <h1>Фільми, серіали й інший контент без обмежень.</h1>
+            <h2>Дивіться будь-де. Скасувати підписку можна будь-коли.</h2>
+            <h3>Готові до перегляду? Введіть адресу електронної пошти, щоб оформити або поновити
+                підписку.
+            </h3>
+            <form class="email">
+                <input class="input-email" type="email" id="email" name="email" value=""
+                    placeholder="Адреса електронної пошти">
+                <label for="email"><a class="btn-email btn">Почати<i class="fa-solid fa-chevron-right"></i></a></label>
+            </form>
+        </div>
+    </div>
+
+    <!-- SECTION 1-->
+    <!-- 1 -->
+    <section class="sec-1-even">
+
+        <div class="space-y-6 leading-tight ">
+            <p class="sec-p-lg">Дивіться на телевізорі.</p>
+            <p class="sec-p-md">Дивіться на Smart TV, Playstation, Xbox, Chromecast, Apple TV,
+                Blu-ray-програвачах
+                тощо.</p>
+        </div>
+
+        <div class="img-mobile">
+            <div class="img-frame ">
+                <img class="img-frame" src="..\img\tv.png" alt="tv">
+                <video class="vid-1" autoplay muted loop playsinline src="..\img\video-tv-1.mp4"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="sec-1-reversed ">
+
+        <div class="img-mobile">
+            <img src="..\img\mobile.jpg" alt="mobile">
+        </div>
+        <div class="  space-y-6 leading-tight ">
+            <p class="sec-p-lg">Завантажуйте контент і дивіться його офлайн.</p>
+            <p class="sec-p-md">Легко зберігайте улюблені телесеріали й фільми, щоб дивитися їх
+                будь-коли.</p>
+        </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="sec-1-even">
+        <div class="space-y-6 leading-tight">
+            <p class="sec-p-lg">Дивіться будь-де.</p>
+            <p class="sec-p-md" style="max-width: 450px;">Дивіться фільми й телесеріали без обмежень на смартфоні,
+                планшеті, ноутбуці й телевізорі
+                без доплат.</p>
+        </div>
+        <div class="img-frame img-mobile">
+            <img class="img-frame" src="..\img\device-pile.png" alt="device-pile">
+            <video class="vid-2" playsinline autoplay muted loop src="..\img\video-devices.m4v"></video>
+        </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="sec-1-reversed">
+
+        <div class="img-mobile">
+            <img src="..\img\kids.png" alt="kids">
+        </div>
+        <div class="  space-y-6 leading-tight ">
+            <p class="sec-p-lg">Створюйте профілі для дітей.</p>
+            <p class="sec-p-md">Ваші діти зможуть мандрувати країною фантазії разом з улюбленими персонажами в
+                спеціальних профілях, які входять у вартість підписки.</p>
+        </div>
+    </section>
+
+    <section class="sec-2">
+        <h1>Поширені запитання</h1>
+        <ul class="faq-list">
+            <!--FAQ 1-->
+            <li>
+                <button onclick="selectAnswer()" class="faq-q-item faq-q " id="faq-1">
+                    Що таке Netflix?
+                    <i class="faq-icon fa-solid fa-plus" id="faq-1-icon"></i></button>
+                <div class="faq-a-item faq-a " id="faq-1-answer">
+                    <span>Netflix — це сервіс потокового передавання відео, що дає змогу дивитися різноманітні
+                        відзначені нагородами телесеріали, фільми, аніме, документалістику й
+                        інший контент на тисячах
+                        пристроїв із підключенням до Інтернету.<br><br>
+                        Ви можете дивитися скільки завгодно й коли завгодно без реклами, і все це за єдиною низькою
+                        щомісячною ціною. Ви завжди знайдете для себе щось нове. Крім того, ще більше телесеріалів і
+                        фільмів додається щотижня!</span>
+                </div>
+            </li>
+            <!--FAQ 2-->
+            <li>
+                <button onclick="selectAnswer()" class="faq-q-item faq-q" id="faq-2">Скільки коштує підписка Netflix? <i
+                        class="faq-icon fa-solid fa-plus " id="faq-2-icon"></i></button>
+                <div class=" faq-a-item faq-a" id="faq-2-answer">
+                    <span>Дивіться Netflix на смартфоні, планшеті, Smart TV, ноутбуці або пристрої потокової передачі за
+                        фіксованою щомісячною ціною. Плани від 4,99 EUR до 9,99 EUR на місяць. Без доплат й угод.</span>
+                </div>
+            </li>
+            <!--FAQ 3-->
+            <li>
+                <button onclick="selectAnswer()" class="faq-q-item faq-q " id="faq-3"> Де можна дивитися контент?
+                    <i class="faq-icon fa-solid fa-plus" id="faq-3-icon"></i></button>
+                <div class="faq-a-item faq-a " id="faq-3-answer">
+                    <span>Дивіться будь-де, будь-коли. Увійдіть у свій обліковий запис Netflix, щоб дивитися контент
+                        онлайн на сайті netflix.com з персонального комп’ютера або будь-якого пристрою з підключенням до
+                        Інтернету, на якому можна завантажити застосунок Netflix, як-от Smart TV, смартфон, планшет,
+                        медіапрогравач для потокової передачі або ігрова приставка.<br><br>
+
+                        Крім того, ви можете завантажувати улюблені телешоу в застосунку для iOS, Android або Windows
+                        10. Завантажуйте контент і дивіться його в дорозі навіть без підключення до Інтернету. Беріть
+                        Netflix із собою.</span>
+                </div>
+            </li>
+            <!--FAQ 4-->
+            <li>
+                <button onclick="selectAnswer()" class="faq-q-item faq-q" id="faq-4"> Як скасувати підписку? <i
+                        class="faq-icon fa-solid fa-plus" id="faq-4-icon"></i></button>
+                <div class="faq-a faq-a-item" id="faq-4-answer">
+                    <span class="">Netflix надає гнучкі умови. Жодних надокучливих угод чи зобов’язань. Скасувати
+                        підписку можна всього за два кліки. Жодних комісій за скасування. Оформити або скасувати
+                        підписку можна будь-коли.</span>
+                </div>
+            </li>
+            <!--FAQ 5-->
+            <li>
+                <button onclick="selectAnswer()" class="faq-q-item faq-q" id="faq-5"> Що можна подивитися на Netflix? <i
+                        class="faq-icon fa-solid fa-plus" id="faq-5-icon"></i></button>
+                <div class="faq-a faq-a-item" id="faq-5-answer">
+                    <span>Netflix пропонує обширну бібліотеку художніх фільмів, документалістики, телесеріалів, аніме,
+                        відзначеного нагородами оригінального контенту тощо. Дивіться скільки завгодно й коли
+                        завгодно.</span>
+                </div>
+            </li>
+            <!--FAQ 6-->
+            <li>
+                <button onclick="selectAnswer()" class="faq-q-item faq-q" id="faq-6"> Netflix підходить для дітей? <i
+                        class="faq-icon fa-solid fa-plus" id="faq-6-icon"></i></button>
+                <div class="faq-a faq-a-item" id="faq-6-answer">
+                    <span>Інтерфейс Netflix для дітей включено у вашу підписку. Діти можуть насолоджуватися
+                        телесеріалами й фільмами для всієї родини у своєму профілі, а батьки при цьому контролюватимуть
+                        такий контент.<br><br>
+
+                        Дитячі профілі захищаються батьківським контролем із PIN-кодом. Таким чином ви зможете ставити
+                        вікові обмеження на дитячий контент і блокувати певні найменування, щоб дитина їх не
+                        переглядала.</span>
+                </div>
+            </li>
+            <!--FAQ 7-->
+            <li>
+                <button onclick="selectAnswer()" class="faq-q-item faq-q" id="faq-7"> Чому відображається текст цією
+                    мовою? <i class="faq-icon fa-solid fa-plus" id="faq-7-icon"></i></button>
+                <div class="faq-a faq-a-item" id="faq-7-answer">
+                    <span>Мову встановлено відповідно до налаштувань браузера.</span>
+                </div>
+            </li>
+
+        </ul>
+        <div class="mt-10 space-y-6 email-footer">
+            <p class="text-lg">Готові до перегляду? Введіть адресу електронної пошти, щоб оформити або поновити
+                підписку.
+            </p>
+            <form class="email">
+                <input class="input-email" type="text" id="email" name="email" value=""
+                    placeholder="Адреса електронної пошти">
+                <label for="email"><a class="btn-email btn">Почати<i class="fa-solid fa-chevron-right"></i></a></label>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Маєте запитання? Зателефонуйте за номером <span class="footer-li">0800-509-416</span></p>
+        <div class="footer-cols">
+            <ul>
+                <li class="footer-li"><a href="#">Поширені запитання</a></li>
+                <li class="footer-li"><a href="#">Зв’язки з інвесторами</a></li>
+                <li class="footer-li"><a href="#">Конфіденційність</a></li>
+                <li class="footer-li"><a href="#">Перевірка швидкості</a></li>
+            </ul>
+
+            <ul>
+                <li class="footer-li"><a href="#">Довідковий центр</a></li>
+                <li class="footer-li"><a href="#">Вакансії</a></li>
+                <li class="footer-li"><a href="#">Налаштування файлів cookie</a></li>
+                <li class="footer-li"><a href="#">Юридичні повідомлення</a></li>
+            </ul>
+
+            <ul>
+                <li class="footer-li"><a href="#">Обліковий запис</a></li>
+                <li class="footer-li"><a href="#">Способи перегляду</a></li>
+                <li class="footer-li"><a href="#">Корпоративна інформація</a></li>
+                <li class="footer-li"><a href="#">Тільки на Netflix</a></li>
+            </ul>
+
+            <ul>
+                <li class="footer-li"><a href="#">Медіацентр</a></li>
+                <li class="footer-li"><a href="#">Умови використання</a></li>
+                <li class="footer-li"><a href="#">Зв’язатися з нами</a></li>
+
+            </ul>
+        </div>
+        <div class="">
+            <button onclick="myFunction()" class="btn footer-btn" id="myBtn"><i class="fa-solid fa-globe"></i>
+                Українська <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div id="myDropdownLang" class="dropdown-content">
+                <a href="#">Українська</a>
+                <a href="#">English</a>
+                <a href="#">Русский</a>
+            </div>
+            <br>
+            <p style="font-size: 13px;">Netflix Україна</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="..\js\main.js"></script>
+</body>
+
+</html>

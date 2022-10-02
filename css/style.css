@@ -1,0 +1,637 @@
+:root {
+    --gray: rgb(34, 34, 34);
+    --red: #e50914;
+}
+
+body {
+    background-color: var(--gray);
+    -webkit-font-smoothing: antialiased;
+}
+
+.logo {
+    width: 167px;
+}
+
+
+.hero {
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/701eec50-4b87-4dc0-9d00-b0f54025dc36/8aadb4bc-b807-47ea-99d0-9d410c9eb92b/UA-uk-20220905-popsignuptwoweeks-perspective_alpha_website_large.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    box-shadow: inset 0px -200px 100px 20px rgb(0 0 0 / 60%), inset 0px 200px 100px 20px rgb(0 0 0 / 50%);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 1.625rem;
+    /* 24px */
+    line-height: 2rem;
+    /* 32px */
+}
+
+.hero h3 {
+    font-size: 1.2rem;
+    /* 18px */
+    line-height: 1.75rem;
+    /* 28px */
+}
+
+
+
+.header {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    max-width: 1830px;
+    margin: 0 auto;
+    padding: 1.75rem 3.5rem;
+
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 9rem;
+
+    padding-bottom: 5rem;
+    position: relative;
+    z-index: 2;
+    text-shadow: rgba(0, 0, 0, 0.296) 1.2px 1.2px;
+}
+
+.email {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.sec-1-even,
+.sec-1-reversed {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+    margin: auto;
+    margin-top: 8px;
+    background-color: black;
+    color: white;
+    padding: 20px 210px 20px 210px;
+
+
+}
+
+
+/*.sec-content {
+    margin-top: 1.5rem;
+    line-height: 1.25;
+}*/
+
+.sec-text {
+    padding: 95px 0px;
+    line-height: 1;
+}
+
+.sec-p-lg {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.sec-p-md {
+    font-size: 26px;
+    line-height: 1;
+}
+
+.img-frame {
+    position: relative;
+    z-index: 2;
+}
+
+
+.vid-1 {
+    position: absolute;
+    top: 19%;
+    left: 12%;
+    height: 57%;
+    z-index: 1;
+    object-fit: contain;
+
+}
+
+.vid-2 {
+    position: absolute;
+    top: 12%;
+    left: 19%;
+    width: 62%;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.sec-2 {
+    margin-top: 8px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 70px 45px;
+}
+
+.sec-2 h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 53px;
+    line-height: 1;
+}
+
+
+.faq-list {
+    padding: 0px 307px;
+    list-style: none;
+}
+
+.faq-q {
+    position: relative;
+    font-size: 26px;
+    text-align: left;
+    background-color: rgb(48, 48, 48);
+    border: 0;
+    font-weight: 600;
+    margin-top: 8px;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    width: 100%;
+}
+
+.faq-icon {
+    position: absolute;
+    right: 33px;
+    top: 26px;
+}
+
+.faq-a {
+    display: none;
+    font-size: 26px;
+    text-align: left;
+    line-height: 1;
+    background-color: rgb(48, 48, 48);
+    border: 0;
+    font-weight: 300;
+    margin-top: 2px;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    width: 100%;
+
+}
+
+.show {
+    display: block !important;
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #868383;
+    line-height: 1.3;
+    min-width: 119px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    /*padding: 12px 16px;*/
+    /*padding: 0px 15px;*/
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    z-index: 3;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(53, 134, 255, 0.542);
+}
+
+.footer {
+    margin-top: 8px;
+    padding: 70px 310px 33px 310px;
+    background-color: black;
+    color: gray;
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    line-height: 2.5;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.footer-li:hover {
+    text-decoration: underline 1px;
+    cursor: pointer;
+}
+
+/*Buttons*/
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+.btn-lang {
+    padding: 8px 10px;
+    margin-right: 32px;
+    border: rgba(255, 255, 255, 0.544) 0.1px solid;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 0;
+    letter-spacing: -1px;
+}
+
+
+.btn-login {
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--red);
+    padding: 7px 17px;
+    text-align: center;
+    line-height: 0;
+}
+
+.btn-email {
+    background-color: var(--red);
+    font-size: 30px;
+    padding: 10px 20px 15px 20px;
+    line-height: 0;
+    transform: translate(0% 50%);
+    margin: 0 !important;
+    color: white;
+}
+
+.btn-email i {
+    height: 5px;
+}
+
+.footer-btn {
+    margin-top: 30px;
+    padding: 14px 19px;
+    border: rgba(255, 255, 255, 0.264) 0.1px solid;
+    border-radius: 2px;
+    text-align: center;
+    display: block;
+}
+
+.input-email {
+    padding: 20px 10px;
+    width: 500px;
+    margin: 0 !important;
+}
+
+
+
+
+@media (min-width: 1800px) {
+
+    .sec-1-even,
+    .sec-1-reversed {
+        grid-template-columns: 600px 600px;
+    }
+}
+
+/* For small laptops with width 1024px*/
+@media (max-width: 1024px) {
+
+    .faq-list {
+        padding: 0px 115px;
+    }
+
+    .footer {
+        padding: 70px 110px 33px 110px;
+    }
+
+    .hero-content {
+        margin-top: 7rem
+    }
+
+    .sec-1-even,
+    .sec-1-reversed {
+        padding: 20px 47px 20px 55px;
+    }
+}
+
+
+/* 870-1441px */
+@media (max-width: 1441px) {
+    .hero h1 {
+        font-size: 3.125rem;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    .hero h3 {
+        font-size: 1.4rem;
+        /* 18px */
+        line-height: 1.75rem;
+        /* 28px */
+    }
+
+}
+
+/*For tablets*/
+@media (max-width: 948px) {
+
+    .sec-1-even,
+    .sec-1-reversed {
+        padding: 66px 47px 47px 55px;
+    }
+
+    .sec-1-even {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        margin-top: 8px;
+        color: white;
+        grid-gap: 0rem;
+
+    }
+
+    .sec-1-reversed {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        margin-top: 8px;
+        grid-gap: 0rem;
+
+    }
+
+    .img-mobile {
+        width: 80%;
+    }
+
+    .sec-2 {
+        padding: 53px 75px;
+    }
+
+    .sec-2 h1 {
+        font-size: 40px;
+        padding-bottom: 30px
+    }
+
+    .sec-p-lg {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .sec-p-md {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .faq-list {
+        padding: 0;
+    }
+
+    .faq-q,
+    .faq-a {
+        font-size: 20px;
+    }
+
+    .faq-icon {
+        right: 22px;
+        top: 20px;
+    }
+
+    .email-footer p {
+        font-size: 23px;
+        padding: 0 30px;
+    }
+
+    .email {
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+        padding: 0 30px;
+    }
+
+    .btn-email {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 51px 70px 33px 70px;
+    }
+}
+
+/*For phones*/
+@media (max-width:540px) {
+
+    .header {
+        padding: 1.75rem 1.31rem;
+    }
+
+    .logo {
+        width: 88px;
+    }
+
+    .btn-lang {
+        margin-right: 4px;
+        padding: 5px 8px;
+    }
+
+    .btn-login {
+        padding: 2px 8px;
+    }
+
+    .input-email {
+
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .email {
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+    }
+
+    .btn-email {
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .hero-content {
+        max-width: 368px;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    .hero h2 {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
+    .hero-content {
+        margin-top: 3rem;
+
+    }
+
+    .hero-content> {
+        margin-top: 0.9rem;
+    }
+
+    .sec-1-even {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 54px 14px 54px 14px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        margin-top: 8px;
+        color: white;
+        grid-gap: 0rem;
+        min-height: 274px;
+    }
+
+    /*
+    min-height: 450px;
+    margin-top: 8px;
+    background-color: black;
+    color: white;
+    padding: 20px 210px 20px 210px;*/
+
+    .sec-1-reversed {
+        position: relative;
+        display: flex;
+        padding: 54px 14px 54px 14px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        margin-top: 8px;
+        grid-gap: 0rem;
+        min-height: 274px;
+    }
+
+    .img-mobile {
+        padding: 0;
+    }
+
+    .sec-p-lg {
+        font-size: 1.625rem;
+        text-align: center;
+    }
+
+    .sec-p-md {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .sec-2 {
+        padding: 50px 0px;
+    }
+
+    .sec-2 h1 {
+        font-size: 1.625rem;
+        padding-bottom: 10px;
+    }
+
+    .faq-list {
+        padding: 0;
+    }
+
+    .faq-q,
+    .faq-a {
+        font-size: 18px;
+    }
+
+    .faq-icon {
+        right: 22px;
+        top: 20px;
+    }
+
+    .email-footer {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .email-footer p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .footer {
+        padding: 70px 15px 27px 36px;
+    }
+
+    .footer-cols {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+        line-height: 2.5;
+        font-size: 13px;
+        margin-top: 30px;
+    }
+
+
+
+
+}
