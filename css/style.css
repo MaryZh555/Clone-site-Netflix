@@ -103,15 +103,7 @@ body {
     background-color: black;
     color: white;
     padding: 20px 210px 20px 210px;
-
-
 }
-
-
-/*.sec-content {
-    margin-top: 1.5rem;
-    line-height: 1.25;
-}*/
 
 .sec-text {
     padding: 95px 0px;
@@ -143,7 +135,6 @@ body {
     height: 57%;
     z-index: 1;
     object-fit: contain;
-
 }
 
 .vid-2 {
@@ -174,6 +165,7 @@ body {
 .faq-list {
     padding: 0px 307px;
     list-style: none;
+    transition: all 1s ease-out;
 }
 
 .faq-q {
@@ -186,12 +178,14 @@ body {
     margin-top: 8px;
     padding: 0.8em 2.2em 0.8em 1.2em;
     width: 100%;
+    transition: all 1s ease-out;
 }
 
 .faq-icon {
     position: absolute;
     right: 33px;
     top: 26px;
+    transition: all 0.5s ease-out;
 }
 
 .faq-a {
@@ -204,12 +198,11 @@ body {
     font-weight: 300;
     margin-top: 2px;
     padding: 0.8em 2.2em 0.8em 1.2em;
-    width: 100%;
-
 }
 
 .show {
-    display: block !important;
+    width: 100%;
+    display: block; 
 }
 
 .rotate {
@@ -219,6 +212,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
+    transition: all 1s ease-out;
 }
 
 .dropdown-content {
@@ -230,22 +224,24 @@ body {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 3;
+    transition: all 1s ease-out;
 }
 
 .dropdown-content a {
     color: rgb(255, 255, 255);
-    /*padding: 12px 16px;*/
-    /*padding: 0px 15px;*/
     text-align: center;
     text-decoration: none;
     display: block;
     z-index: 3;
+    transition: all 1s ease-out;
 }
 
 .dropdown-content a:hover {
     background-color: rgba(53, 134, 255, 0.542);
+    transition: all 1s ease-out;
 }
 
+/* Footer */
 .footer {
     margin-top: 8px;
     padding: 70px 310px 33px 310px;
@@ -550,12 +546,6 @@ body {
         min-height: 274px;
     }
 
-    /*
-    min-height: 450px;
-    margin-top: 8px;
-    background-color: black;
-    color: white;
-    padding: 20px 210px 20px 210px;*/
 
     .sec-1-reversed {
         position: relative;
@@ -630,8 +620,6 @@ body {
         font-size: 13px;
         margin-top: 30px;
     }
-
-
 
 
 }

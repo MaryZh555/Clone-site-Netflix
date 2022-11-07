@@ -1,6 +1,6 @@
 
 //Language button dropdown
-function myFunction() {
+function dropdown() {
     document.getElementById("myDropdownLang").classList.toggle("show");
 }
 
